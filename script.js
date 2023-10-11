@@ -1,8 +1,32 @@
 const gridContainer = document.querySelector('.gridContainer');
 
-let div;
+let box;
+let hovered = false;
 
-for(let i = 0; i < 256; i++){
-     div = document.createElement('div');
-     gridContainer.appendChild(div);
+drawGame();
+
+function createDiv(){
+    for(let i = 0; i < 256; i++){
+        box = document.createElement('div');
+        box.className = (i+1).toString();
+        gridContainer.appendChild(box);
+            box.addEventListener('mouseover', (event) => {
+                console.log(event.target.className);
+               })
+        
+   }   
 }
+
+function logBoxHovered(){
+    return 
+}
+
+function pixelatedEffect() {
+    
+}
+
+function drawGame() {
+    createDiv();
+}
+
+
