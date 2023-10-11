@@ -1,0 +1,21 @@
+.gridContainer{
+    display:flex;
+    border:2px solid black;
+    flex-direction:row;
+    align-items:center;
+    width:960px; ;
+    flex-wrap:wrap;
+}
+
+.gridContainer div {
+    border:1px solid black;
+    height:50px;
+    width:58px;
+    padding: 0;
+}
+
+body {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}

@@ -1,16 +1,8 @@
 const gridContainer = document.querySelector('.gridContainer');
 
-//create divs
-const div1 = document.createElement('div');
+let div;
 
-//give class names 
-div1.className = "div1";
-
-//append divs to gridContainer
-gridContainer.appendChild(div1);
-
-function createGrid() {
-    for(let i = 0; i<16; i++) {
-        
-    }
+for(let i = 0; i < 256; i++){
+     div = document.createElement('div');
+     gridContainer.appendChild(div);
 }
