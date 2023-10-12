@@ -1,7 +1,7 @@
 const gridContainer = document.querySelector('.gridContainer');
-
+const body = document.querySelector('body');
 let box;
-let hovered = false;
+let resetButton;
 
 drawGame();
 
@@ -11,17 +11,27 @@ function createDiv(){
         box.className = (i+1).toString();
         gridContainer.appendChild(box);
             box.addEventListener('mouseover', (event) => {
-                console.log(event.target.className);
                 event.target.classList.add("visited");
-               })
-        
+               }) 
    }   
-
-   
 }
 
-function logBoxHovered(){
-    return 
+function createResetButton(){
+    resetButton = document.createElement('button');
+    resetButton.className = "resetButton";
+    resetButton.textContent = "Reset the board";
+    body.appendChild(resetButton);
+    resetBoard();
+}
+
+function resetBoard() {
+    resetButton.addEventListener('click', () => {
+        const colouredBoxes = document.querySelectorAll('.visited');
+        colouredBoxes.forEach(box => {
+            box.classList.remove("visited");
+        });
+    });
+    
 }
 
 function pixelatedEffect() {
@@ -30,6 +40,8 @@ function pixelatedEffect() {
 
 function drawGame() {
     createDiv();
+    createResetButton();
+    
 }
 
 
