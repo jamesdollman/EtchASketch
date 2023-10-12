@@ -46,10 +46,6 @@ function displayElements(){
    createResetButton();
 }
 
-function startDrawing() {
-    
-}
-
 function createResetButton(){
     resetButton = document.createElement('button');
     resetButton.className = "resetButton";
