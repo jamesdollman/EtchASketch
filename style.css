@@ -1,16 +1,15 @@
 .gridContainer{
     display:flex;
     border:2px solid black;
-    flex-direction:row;
+    flex-direction:column;
     align-items:center;
-    width:960px; ;
+    width:480px;
+    height:480px;
     flex-wrap:wrap;
 }
 
 .gridContainer div {
-    border:1px solid black;
-    height:50px;
-    width:58px;
+    /* border:1px solid black; */
     padding: 0;
 }
 
@@ -19,6 +18,9 @@ body {
     align-items:center;
     justify-content:center;
     flex-direction:column;
+    height:100vh;
+    overflow:hidden;
+
 }
 
 div .visited {
@@ -28,4 +30,10 @@ div .visited {
 
 .resetButton {
     margin-top:20px;
+}
+
+
+.header {
+    color:red;
+    margin-top:0px;
 }
