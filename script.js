@@ -33,7 +33,6 @@ function displayElements(){
         box.style.height = squareSize;
         gridContainer.appendChild(box);
         box.addEventListener('click', () =>{
-            startDrawing();
             clicked = true;
         })
 
