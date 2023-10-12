@@ -19,3 +19,8 @@ body {
     align-items:center;
     justify-content:center;
 }
+
+div .visited {
+    color:red;
+    background-color:red;
+}

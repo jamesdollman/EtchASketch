@@ -12,9 +12,12 @@ function createDiv(){
         gridContainer.appendChild(box);
             box.addEventListener('mouseover', (event) => {
                 console.log(event.target.className);
+                event.target.classList.add("visited");
                })
         
    }   
+
+   
 }
 
 function logBoxHovered(){
